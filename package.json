@@ -1,0 +1,22 @@
+{
+  "name": "javascritp-intro-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IwryRozemberg/Javascript-web-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IwryRozemberg/Javascript-web-intro/issues"
+  },
+  "homepage": "https://github.com/IwryRozemberg/Javascript-web-intro#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  }
+}

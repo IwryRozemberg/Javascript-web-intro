@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Hello Pizza</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="googlebot" content="noarchive">
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        {% block styles %}{% endblock styles %}
+    </head>
+    <body>
+        <div id="content">
+            <header>
+                <h1>Hello Pizza</h1>
+            </header>
+            {% block content %}{% endblock content %}
+            {% block contentExtra %}{% endblock contentExtra %}
+        </div>
+    </body>
+    {% block script %}{% endblock script %}
+</html>
