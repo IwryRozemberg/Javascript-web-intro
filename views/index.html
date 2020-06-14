@@ -5,7 +5,38 @@
 {% endblock styles %}
 
 {% block content %}
-<p>Teste</p>
+    <main>
+        <section id="vantagens">
+            <ul>
+                <li>Qualidade</li>
+                <li>Sabor</li>
+                <li>Praticipade</li>
+                <li>Agilidade</li>
+            </ul>
+        </section>
+        <section id="sabores">
+            <div id="sabores-h2">
+                <h2>Sabores</h2>
+            </div>
+            <div id="sabores-content">
+                <p>Conheça os nossos sabores de pizza</p>
+                <img src="assets/sabores-pizzas.png" alt="Sabores de pizza">
+            </div>
+        </section>
+        <section id="pedido">
+            <h2>Pedido</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sabor</th>
+                        <th>Quantidade</th>
+                        <th>Preço por unid.</th>
+                        <th>Total Pedido</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+    </main>
 {% endblock content %}
 
 {% block script %}

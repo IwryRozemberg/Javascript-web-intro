@@ -2,11 +2,12 @@ const express = require("express");
 const nunjucks = require("nunjucks");
 const app = express();
 
-express.static("public");
+app.use(express.static("public"));
 
 nunjucks.configure("views",
     {
-        express: app
+        express: app,
+        noCache: true
     })
 
 
