@@ -10,7 +10,7 @@
         {% block styles %}{% endblock styles %}
     </head>
     <body>
-        <header>
+        <header id="header">
             <span id="logo"></span>
             <nav id="menu">
                 <ul>
@@ -18,10 +18,10 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/">Sabores</a>
+                        <a href="#sabores">Sabores</a>
                     </li>
                     <li>
-                        <a href="/">Contato</a>
+                        <a href="#pedido">Pedido</a>
                     </li>
                 </ul>
             </nav>
@@ -31,7 +31,7 @@
             {% block contentExtra %}{% endblock contentExtra %}
         </div>
         <footer>
-            <span id="logo"></span>
+            <span href="#header" id="logo"></span>
             <p>Todos os direitos reservados &copy; 2020</p>
         </footer>
     </body>

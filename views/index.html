@@ -25,7 +25,7 @@
         </section>
         <section id="pedido">
             <h2>Pedido</h2>
-            <form action="/" name="pedido">
+            <form action="#" name="pedido" method="POST">
                 <table>
                     <thead>
                         <tr>
@@ -40,61 +40,61 @@
                             <td>Calabresa</td>
                             <td class="item-preco">12.50</td>
                             <td id="quantidade">
-                                <a>-</a>
-                                <input type="number" class="quantidade" value="0" name="calabresa" disabled>
-                                <a>+</a>
+                                <a class="decremento" id="0">-</a>
+                                <input type="number" class="quantidade" value="0" name="calabresa" id="0" disabled="disabled">
+                                <a class="incremento" id="0">+</a>
                             </td>
-                            <td calss="item-valor-pedido">0.00</td>
+                            <td class="item-valor-pedido">0.00</td>
                         </tr>
                         <tr class="item">
                             <td>Mozzarela</td>
                             <td class="item-preco">11.50</td>
                             <td id="quantidade">
-                                <a>-</a>
-                                <input type="number" class="quantidade" value="0" name="mozzarella" disabled>
-                                <a>+</a>
+                                <a class="decremento" id="1">-</a>
+                                <input type="number" class="quantidade" value="0" name="mozzarella" disabled="disabled">
+                                <a class="incremento" id="1">+</a>
                             </td>
-                            <td calss="item-valor-pedido">0.00</td>
+                            <td class="item-valor-pedido">0.00</td>
                         </tr>
                         <tr class="item">
                             <td>Peperoni</td>
                             <td class="item-preco">14.00</td>
                             <td id="quantidade">
-                                <a>-</a>
-                                <input type="number" class="quantidade" value="0" name="peperoni" disabled>
-                                <a>+</a>
+                                <a class="decremento" id="2">-</a>
+                                <input type="number" class="quantidade" value="0" name="peperoni" disabled="disabled">
+                                <a class="incremento" id="2">+</a>
                             </td>
-                            <td calss="item-valor-pedido">0.00</td>
+                            <td class="item-valor-pedido">0.00</td>
                         </tr>
                         <tr class="item">
                             <td>Marguerita</td>
                             <td class="item-preco">13.00</td>
                             <td id="quantidade">
-                                <a>-</a>
-                                <input type="number" class="quantidade" value="0" name="marguerita" disabled>
-                                <a>+</a>
+                                <a class="decremento" id="3">-</a>
+                                <input type="number" class="quantidade" value="0" name="marguerita" disabled="disabled">
+                                <a class="incremento" id="3">+</a>
                             </td>
-                            <td calss="item-valor-pedido">0.00</td>
+                            <td class="item-valor-pedido">0.00</td>
                         </tr>
                         <tr class="item">
                             <td>Portuguesa</td>
                             <td class="item-preco">14.50</td>
                             <td id="quantidade">
-                                <a>-</a>
-                                <input type="number" class="quantidade" value="0" name="portuguesa" disabled>
-                                <a>+</a>
+                                <a class="decremento" id="4">-</a>
+                                <input type="number" class="quantidade" value="0" name="portuguesa" disabled="disabled">
+                                <a class="incremento" id="4">+</a>
                             </td>
-                            <td calss="item-valor-pedido">0.00</td>
+                            <td class="item-valor-pedido">0.00</td>
                         </tr>
                         <tr class="item">
                             <td>Alho</td>
                             <td class="item-preco">11.00</td>
                             <td id="quantidade">
-                                <a>-</a>
-                                <input type="number" class="quantidade" value="0" name="alho" disabled>
-                                <a>+</a>
+                                <a class="decremento" id="5">-</a>
+                                <input type="number" class="quantidade" value="0" name="alho"bdisabled="disabled">
+                                <a class="incremento" id="5">+</a>
                             </td>
-                            <td calss="item-valor-pedido">0.00</td>
+                            <td class="item-valor-pedido">0.00</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -103,12 +103,14 @@
                         <td id="total-valor">0.00</td>
                     </tfoot>
                 </table>
-                <input type="button" id="enviar-pedido" value="Enviar pedido">
+                <input type="submit" id="enviar-pedido" value="Enviar pedido">
             </form>
         </section>
     </main>
 {% endblock content %}
-
+{% block contentExtra %}
+    {% include "partials/index-modal.html" %}
+{% endblock contentExtra %}
 {% block script %}
     <script src="scripts/index.js"></script>
 {% endblock script %}

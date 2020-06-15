@@ -55,6 +55,7 @@ section {
 
 #pedido {
     background-color: rgba(0, 0, 0, 0.35);
+    padding-bottom: 30px;
 }
 
 form {
@@ -144,15 +145,15 @@ form td:nth-child(3) {
     text-align: center;
 }
 
-form input[type="button"] {
+form input#enviar-pedido {
     width: 100%;
-    /* margin: 20px 0; */
+    margin: 10px 0;
     padding-top: 15px;
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.35);
 }
 
-form input[type="button"]:hover {
+form input#enviar-pedido:hover {
     background-color: #6D6D6D6D;
     cursor: pointer;
 }
@@ -160,12 +161,4 @@ form input[type="button"]:hover {
 form tfoot {
     font-weight: bold;
     text-transform: uppercase;
-}
-
-.texto-positivo {
-    color: #87b50f;
-}
-
-.texto-negativo {
-    color: #fb3958
 }
