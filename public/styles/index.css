@@ -122,13 +122,18 @@ form a:active {
     background-color: #777;
 }
 
+form td#quantidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 form input.quantidade {
     text-align: center;
     border: none;
-    display: inline;
     padding: 5px 0;
     margin-left: 15px;
-    width: 35px;
+    width: 30%;
     font-style: italic;
     font-size: 14px;
 }
