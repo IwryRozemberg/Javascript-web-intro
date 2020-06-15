@@ -5,7 +5,8 @@
 * {
     margin: 0;
     padding: 0;
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 body {
@@ -23,7 +24,7 @@ header {
     justify-content: space-between;
 }
 
-#logo{
+#logo {
     width: 300px;
     height: 70px;
     background: url("../assets/logo-helloPizza.png") 0 0 no-repeat;
@@ -37,6 +38,7 @@ header nav ul {
     display: flex;
 }
 
+
 /* header nav ul li {
     list-style: none;
 } */
@@ -45,12 +47,12 @@ ul li {
     list-style: none;
 }
 
-header nav ul li  a {
-    color: white;
+header nav ul li a {
+    /* color: white; */
     text-decoration: none;
     width: 100px;
     font-size: 20px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     display: block;
     text-align: center;
     letter-spacing: 1px;
@@ -58,20 +60,36 @@ header nav ul li  a {
     transform: translateY(-50%);
 }
 
-header nav ul li  a:hover {
+header nav ul li a:hover {
     /* font-weight: bold; */
     color: rgba(255, 255, 255, 0.7);
 }
 
 h2 {
-    color: white;
-    padding: 20px;    
+    /* color: white; */
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.35);
     display: inline-block;
     border-radius: 8px 8px 0 0;
-
     letter-spacing: 1.5px;
     text-transform: uppercase;
     /* float: left; */
     margin: 0px 45%;
+}
+
+footer {
+    height: 100px;
+    background-color: #2A2A2A;
+    position: relative;
+    padding: 35px 0 10px 0;
+}
+
+footer span {
+    display: block;
+    margin: 0px auto;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
 }
